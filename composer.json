@@ -1,0 +1,36 @@
+{
+    "name": "bugsheng/laravel-sql",
+	"description": "No description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BugSheng",
+            "email": "bug_sheng@126.com"
+        }
+    ],
+    "require": {
+		"php": ">=7.0"
+	},
+	"require-dev": {
+		"laravel/laravel": ">=5.5"
+	},
+	"autoload": {
+		"psr-4": {
+            "BugSheng\\Laravel\\Database\\": "src/"
+        }
+	},
+	"minimum-stability": "dev",
+	"extra": {
+		"laravel": {
+            "providers": [
+              "BugSheng\\Laravel\\Database\\DatabaseMacroServiceProvider"
+            ]
+        }
+	},
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}
