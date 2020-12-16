@@ -16,7 +16,7 @@ DB::table('users')->where('name', 'like', '%test%')->get();
 DB::table('users')->where('name', 'like', '%test%')->select(['*'])->sql();
 ```
 
-- 上述示例中直接的**get()**方法获取数据 实际上缺省了参数**"['*']"**
+- 上述示例中直接的**get()**方法获取数据 实际上缺省了参数**['*']**
 
 ## 框架要求
 
