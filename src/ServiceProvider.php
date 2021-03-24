@@ -6,9 +6,9 @@ namespace BugSheng\Laravel\Database;
 
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Query\Builder as QueryBuilder;
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
-class DatabaseMacroServiceProvider extends ServiceProvider
+class ServiceProvider extends LaravelServiceProvider
 {
 
     /**
