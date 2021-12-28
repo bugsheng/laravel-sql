@@ -20,14 +20,14 @@ class ServiceProvider extends LaravelServiceProvider
     {
         QueryBuilder::macro('sql', function () {
             $bindings = $this->getBindings();
-            $sql = str_replace('?', '%s', $this->toSql());
+            $sql = str_replace('?', "'%s'", $this->toSql());
 
             return sprintf($sql, ...$bindings);
         });
 
         EloquentBuilder::macro('sql', function () {
             $bindings = $this->getBindings();
-            $sql = str_replace('?', '%s', $this->toSql());
+            $sql = str_replace('?', "'%s'", $this->toSql());
 
             return sprintf($sql, ...$bindings);
         });
